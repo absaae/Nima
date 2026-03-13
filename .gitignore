@@ -1,32 +1,95 @@
+# ===========================
 # Dependencies
+# ===========================
 node_modules/
 .pnp
 .pnp.js
 
-# Testing
-coverage/
-
-# Production
+# ===========================
+# Build / Production
+# ===========================
 build/
 dist/
+out/
+.next/
+.vercel/
+.netlify/
 
+# ===========================
+# Testing
+# ===========================
+coverage/
+
+# ===========================
 # Environment variables
+# ===========================
 .env
 .env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
 .env.production
+.env.production.local
 
+# ===========================
+# Firebase / Supabase
+# ===========================
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+.firebaserc
+# Si tienes service account keys
+*-service-account.json
+serviceAccount*.json
+firebase-adminsdk*.json
+
+# ===========================
+# Cache
+# ===========================
+.cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.next/cache/
+
+# ===========================
+# TypeScript
+# ===========================
+*.js.map
+*.d.ts.map
+
+# ===========================
 # Logs
+# ===========================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# Editor directories
+# ===========================
+# Editor
+# ===========================
 .vscode/
 .idea/
 *.swp
 *.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
+# ===========================
 # OS
+# ===========================
 .DS_Store
+.DS_Store?
 Thumbs.db
+ehthumbs.db
+Desktop.ini
